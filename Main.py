@@ -1,34 +1,4 @@
-"""
-Setup and Execution Instructions:
 
-1. Environment Setup:
-   - Ensure Python 3.6+ is installed.
-   - It is recommended to use a virtual environment to manage dependencies.
-   - Navigate to the script's directory: cd /Users/cooperpenniman/Downloads/
-   - Create a virtual environment: python3 -m venv venv
-   - Activate the virtual environment: source venv/bin/activate
-
-2. Install Dependencies:
-   - With the virtual environment active, install required packages:
-     pip install psycopg2-binary anthropic python-dotenv numpy openai
-
-3. Environment Variables:
-   - Create a file named `.env` in the same directory as the script (/Users/cooperpenniman/Downloads/).
-   - Add your API keys to the `.env` file:
-     ANTHROPIC_API_KEY=your_actual_anthropic_key
-     OPENAI_API_KEY=your_actual_openai_key
-
-4. Database Setup:
-   - Ensure PostgreSQL server is running.
-   - The script connects to a database named 'chatbot_semantic_db' by default.
-   - Enable the pgvector extension in the database.
-   - The script expects tables 'table_metadata' and 'column_metadata' with vector type columns for embeddings.
-
-5. Running the Script:
-   - Make sure your virtual environment is active (`source venv/bin/activate` from the Downloads directory).
-   - Navigate to the script's directory (`/Users/cooperpenniman/Downloads/`).
-   - Run the script using: python3 tooltest.py
-"""
 import psycopg2
 import json
 from datetime import datetime
